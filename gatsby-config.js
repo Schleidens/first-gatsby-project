@@ -13,5 +13,9 @@ module.exports = {
       "path": "./src/pages/"
     },
     __key: "pages"
-  }]
+  }],
+  siteMetadata: {
+    title: 'start with Gatsby',
+    description: 'yeahhh Gatsby is good'
+  }
 };
