@@ -1,10 +1,16 @@
+import { graphql } from "gatsby"
 import * as React from "react"
 import Layout from "../layout/Layout"
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
+  const { title, description} = data.site.siteMetadata
   return (
     <Layout>
-     gatsby
+    <h2>
+    gatsby
+    </h2>
+
+     {title} & {description}
     </Layout>
   )
 }
@@ -12,3 +18,16 @@ const IndexPage = () => {
 export default IndexPage
 
 export const Head = () => <title>Home Page</title>
+
+export const query = graphql`
+query SiteInfo {
+  site {
+    host
+    port
+    siteMetadata {
+      title
+      description
+    }
+  }
+}
+`
