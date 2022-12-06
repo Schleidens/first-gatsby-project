@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(255, 255, 255);
+    padding: 5px 15px 5px 15px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+
+        li{
+            margin: 0px 10px 0px 0px;
+            list-style: none;
+        }
+    }
+}
+
+.footer{
+    bottom: 0px;
+    position: absolute;
+}
