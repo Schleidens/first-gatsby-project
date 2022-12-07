@@ -21,6 +21,13 @@ export default function Layout({ children }) {
                 About
               </Link>
             </li>
+
+            <li>
+              <Link to="/blog">
+                Blog
+              </Link>
+            </li>
+
            </ul>
         </div>
 
