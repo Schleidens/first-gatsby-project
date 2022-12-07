@@ -1,11 +1,13 @@
 import { graphql, Link } from 'gatsby'
 import React from 'react'
+import Layout from '../../layout/Layout';
 
 export default function index({ data }) {
 
   const posts = data.allMarkdownRemark.nodes;
     return (
-         <div>
+         <Layout>
+          <div>
               <h1>
                 all the blog post
               </h1>
@@ -22,6 +24,7 @@ export default function index({ data }) {
                 </ul>
               </div>
         </div>
+         </Layout>
   )
 }
 

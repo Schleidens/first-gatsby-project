@@ -1,5 +1,6 @@
 import { graphql } from 'gatsby'
 import React from 'react'
+import Layout from '../../layout/Layout';
 
 export default function detail({ data }) {
     console.log(data)
@@ -7,12 +8,14 @@ export default function detail({ data }) {
     const { markdownRemark } = data;
     const { html, frontmatter } = markdownRemark;
   return (
-    <div>
-        <h1>
-            {frontmatter.title}
-        </h1>
-        <div dangerouslySetInnerHTML={{ __html: html }}  className="content"/>
-    </div>
+    <Layout>
+        <div>
+            <h1>
+                {frontmatter.title}
+            </h1>
+            <div dangerouslySetInnerHTML={{ __html: html }}  className="content"/>
+        </div>
+    </Layout>
   )
 }
 
