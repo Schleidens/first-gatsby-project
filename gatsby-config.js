@@ -3,8 +3,9 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `first-gatsby-project`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: 'start with Gatsby',
+    siteUrl: 'https://www.yourdomain.tld',
+    description: 'yeahhh Gatsby is good'
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -18,9 +19,5 @@ module.exports = {
       "path": "./src/blogs/"
       },
     __key: "pages"
-  }],
-  siteMetadata: {
-    title: 'start with Gatsby',
-    description: 'yeahhh Gatsby is good'
-  }
+  }]
 };
