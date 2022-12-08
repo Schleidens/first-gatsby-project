@@ -3,7 +3,6 @@ import React from 'react'
 import Layout from '../../layout/Layout';
 
 export default function detail({ data }) {
-    console.log(data)
 
     const { markdownRemark } = data;
     const { html, frontmatter } = markdownRemark;
